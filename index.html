@@ -1,20 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" type="text/css" />
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
 
     <title>Demo-Company-Page</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#">
+          <img src="./images/logo.png" alt="logo" />
+        </a>
+      </div>
+      <ul class="desktop-nav">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      <video
+        class="main-video"
+        loop
+        autoplay
+        muted
+        src="./videos/Binary.mp4"
+        poster="./images/poster.png"
+      ></video>
+      <h1>You Imagine, We Develop!</h1>
+      <a href="#" class="btn">Contact <i class="fas fa-chevron-down"></i></a>
+    </header>
+    <!-- Header End -->
 
-</head>
-<body>
-    <h1>Hello World</h1>
+    <div class="wrapper">
+      <section class="about">
+        <div class="description">
+          <h2>About Us</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
+            repellat obcaecati nemo maiores labore libero consectetur vitae
+            dolore sunt molestiae perspiciatis consequatur voluptas, error
+            doloribus voluptatum sed animi? Magni, accusamus. Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Tenetur odit provident
+            deleniti voluptate atque aut praesentium consequatur laboriosam,
+            sequi tempore quibusdam molestias maiores eos, amet error officia
+            inventore veniam animi. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Consequuntur ullam tempora molestias error fugiat
+            nulla placeat eum repudiandae inventore quisquam quod recusandae,
+            magnam, itaque fuga nostrum ab odit corporis aliquid!
+          </p>
+        </div>
+        <div class="thumbnail">
+          <img src="./images/about.png" alt="About Us" />
+        </div>
+      </section>
+    </div>
 
-    <script src="./scripts.js"></script>
-</body>
+    <script src="./js/scripts.js"></script>
+  </body>
 </html>
