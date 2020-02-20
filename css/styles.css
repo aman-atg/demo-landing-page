@@ -46,6 +46,10 @@ h1 {
 i {
   margin: 0 8px;
 }
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
 /* Navbar */
 
 .logo {
@@ -78,4 +82,19 @@ nav {
 .desktop-nav li a {
   color: white;
   text-decoration: none;
+}
+/* Sections */
+
+section {
+  padding: 16px;
+  display: flex;
+}
+section .thumbnail img {
+  height: 420px;
+}
+h2 {
+  padding: 8px;
+  margin: 8px 0;
+  width: 150px;
+  background: #23b5b5;
 }
