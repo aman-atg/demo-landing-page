@@ -2,6 +2,9 @@
   box-sizing: border-box;
   margin: 0px;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Raleway", "sans-serif";
 }
@@ -31,6 +34,7 @@ h1 {
   letter-spacing: 4px;
   font-size: 48px;
   font-weight: 400;
+  text-align: center;
 }
 .btn {
   background-color: #23b5b5;
@@ -74,6 +78,7 @@ nav {
   margin: 0 auto;
   color: white;
   transition: all 0.4s;
+  color: white;
 }
 
 nav.scrolled {
@@ -177,4 +182,140 @@ h2 {
 h3 {
   margin: 8px;
   font-weight: normal;
+}
+/* Contact Form */
+.contact {
+  flex-direction: column;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+.contact form input,
+.contact form textarea {
+  padding: 12px;
+  margin: 8px 0;
+  font-family: "Raleway", "sans-serif";
+}
+button {
+  background-color: black;
+  color: white;
+  font-weight: 400;
+  padding: 12px;
+  margin: 8px 0;
+  font-family: "Raleway", "sans-serif";
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 16px;
+}
+.social-icons {
+  margin: 16px;
+  font-size: 32px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer i {
+  transition: all 0.4s;
+}
+footer .fa-facebook:hover {
+  color: #3c5a99;
+}
+footer .fa-twitter:hover {
+  color: blue;
+}
+footer .fa-instagram:hover {
+  color: #e1306c;
+}
+
+/* Scrolling */
+#about,
+#work,
+#testimonials,
+#contact {
+  padding-bottom: 48px;
+}
+
+.mobile-nav,
+.menu-btn,
+.close-btn {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .desktop-nav {
+    display: none;
+  }
+  .menu-btn,
+  .close-btn {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .close-btn {
+    display: none;
+    z-index: 500;
+  }
+  .mobile-nav {
+    display: flex;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 500px;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    flex-direction: column;
+    padding: 0;
+    pointer-events: none;
+    opacity: 0;
+  }
+  .mobile-nav.active {
+    opacity: 1;
+    top: 0;
+    pointer-events: auto;
+  }
+  .mobile-nav li {
+    list-style: none;
+    margin: 16px 8px;
+  }
+  .mobile-nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+  }
+  .mobile-nav li a ::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: -12px;
+    border-top: 1px solid white;
+  }
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .thumbnail {
+    height: 200px;
+  }
+  .about .thumbnail img {
+    height: 100%;
+  }
+  .work-gallery .img-card {
+    width: 140px;
+  }
+}
+@media (min-width: 800px) {
+  .menu-btn {
+    display: none;
+  }
 }

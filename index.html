@@ -20,17 +20,49 @@
     <title>Demo-Company-Page</title>
   </head>
   <body>
-    <nav class="scrolled">
+    <nav>
       <div class="logo">
         <a href="#">
           <img src="./images/logo.png" alt="logo" />
         </a>
       </div>
       <ul class="desktop-nav">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Testimonials</a></li>
-        <li><a href="#">Contact</a></li>
+        <li>
+          <a href="#about"><i class="fas fa-info-circle"></i> About</a>
+        </li>
+        <li>
+          <a href="#work"><i class="fas fa-briefcase"></i> Work</a>
+        </li>
+        <li>
+          <a href="#testimonials"
+            ><i class="fas fa-comments"></i> Testimonials</a
+          >
+        </li>
+        <li>
+          <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+        </li>
+      </ul>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="close-btn">
+        <i class="fas fa-times"></i>
+      </div>
+      <ul class="mobile-nav">
+        <li>
+          <a href="#about"><i class="fas fa-info-circle"></i> About</a>
+        </li>
+        <li>
+          <a href="#work"><i class="fas fa-briefcase"></i> Work</a>
+        </li>
+        <li>
+          <a href="#testimonials"
+            ><i class="fas fa-comments"></i> Testimonials</a
+          >
+        </li>
+        <li>
+          <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+        </li>
       </ul>
     </nav>
     <header>
@@ -43,10 +75,12 @@
         poster="./images/poster.png"
       ></video>
       <h1>You Imagine, We Develop!</h1>
-      <a href="#" class="btn">Contact <i class="fas fa-chevron-down"></i></a>
+      <a href="#contact" class="btn"
+        >Contact <i class="fas fa-chevron-down"></i
+      ></a>
     </header>
     <!-- Header End -->
-
+    <div id="about"></div>
     <div class="wrapper">
       <section class="about">
         <div class="description">
@@ -71,6 +105,8 @@
       </section>
     </div>
     <!--About section ends -->
+    <div id="work"></div>
+
     <section class="work">
       <div class="wrapper">
         <!-- Main Image -->
@@ -133,6 +169,7 @@
         </div>
       </div>
     </section>
+    <div id="testimonials"></div>
 
     <div class="wrapper">
       <section class="testimonials">
@@ -190,6 +227,38 @@
         </div>
       </section>
     </div>
+    <!-- Testimonials Sections ends -->
+    <div id="contact"></div>
+
+    <div class="wrapper">
+      <section class="contact">
+        <h2>Contact Us</h2>
+        <form action="">
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <textarea placeholder="Message" cols="30" rows="10"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </div>
+    <!-- Footer -->
+
+    <footer>
+      <div class="social">
+        <h3>Follow Us On</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <p>
+        This website is developed by
+        <a href="linkedin.com/in/aman-atg"> Aman Ansari</a>
+      </p>
+    </footer>
+
+    <!--Footer ends-->
 
     <!-- Script -->
     <script src="./js/glider.min.js"></script>
