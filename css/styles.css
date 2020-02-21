@@ -58,6 +58,7 @@ i {
 .logo img {
   height: 100%;
 }
+
 nav {
   height: 60px;
   display: flex;
@@ -67,11 +68,28 @@ nav {
   max-width: 1024px;
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
+  left: 0;
   z-index: 200;
   margin: 0 auto;
+  color: white;
+  transition: all 0.4s;
 }
+
+nav.scrolled {
+  background: white;
+  height: 50px;
+  box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.75);
+}
+
+nav.scrolled .desktop-nav li a {
+  color: black;
+}
+
+nav.scrolled .menu-btn {
+  color: black;
+}
+
 .desktop-nav {
   display: flex;
 }
