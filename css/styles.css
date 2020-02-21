@@ -98,3 +98,44 @@ h2 {
   width: 150px;
   background: #23b5b5;
 }
+
+/* Work Section */
+
+.work {
+  background: url("../images/poster.png") #1b1b1b;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.active-work {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.active-img-desc {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 16px;
+  color: white;
+}
+.active-work img,
+.img-card img {
+  border: 2px solid white;
+  width: 100%;
+}
+.work-gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.work-gallery .img-card .img-desc {
+  display: none;
+}
+.work-gallery .img-card {
+  width: 200px;
+  margin: 8px;
+}
