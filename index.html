@@ -233,10 +233,21 @@
     <div class="wrapper">
       <section class="contact">
         <h2>Contact Us</h2>
-        <form action="">
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <textarea placeholder="Message" cols="30" rows="10"></textarea>
+        <form
+          action="POST"
+          name="contact"
+          data-netlify="true"
+          data-netlify-recaptcha="true"
+        >
+          <input type="text" placeholder="Name" name="name" />
+          <input type="email" placeholder="Email" name="email" />
+          <textarea
+            placeholder="Message"
+            cols="30"
+            rows="10"
+            name="message"
+          ></textarea>
+          <div data-netlify-recaptcha="true"></div>
           <button type="submit">Send</button>
         </form>
       </section>
