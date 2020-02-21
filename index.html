@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/glider.min.css" type="text/css" />
     <link rel="stylesheet" href="./css/styles.css" type="text/css" />
 
     <link
@@ -19,7 +20,7 @@
     <title>Demo-Company-Page</title>
   </head>
   <body>
-    <nav>
+    <nav class="scrolled">
       <div class="logo">
         <a href="#">
           <img src="./images/logo.png" alt="logo" />
@@ -179,11 +180,29 @@
               </p>
             </div>
           </div>
+          <div class="" id="dots"></div>
+          <button class="glider-prev">
+            <i class="fas fa-chevron-circle-left"></i>
+          </button>
+          <button class="glider-next">
+            <i class="fas fa-chevron-circle-right"></i>
+          </button>
         </div>
       </section>
     </div>
 
     <!-- Script -->
+    <script src="./js/glider.min.js"></script>
     <script src="./js/scripts.js"></script>
+    <script>
+      new Glider(document.querySelector(".glider"), {
+        slidesToShow: 1,
+        dots: "#dots",
+        arrows: {
+          prev: ".glider-prev",
+          next: ".glider-next"
+        }
+      });
+    </script>
   </body>
 </html>
