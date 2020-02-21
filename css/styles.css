@@ -95,7 +95,7 @@ section .thumbnail img {
 h2 {
   padding: 8px;
   margin: 8px 0;
-  width: 150px;
+  width: fit-content;
   background: #23b5b5;
 }
 
@@ -138,4 +138,25 @@ h2 {
 .work-gallery .img-card {
   width: 200px;
   margin: 8px;
+  cursor: pointer;
+}
+/* Testimonials */
+
+.testimonials {
+  flex-direction: column;
+}
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.testimonial img {
+  width: 150px;
+  border-radius: 50%;
+  margin: 24px;
+}
+h3 {
+  margin: 8px;
+  font-weight: normal;
 }
